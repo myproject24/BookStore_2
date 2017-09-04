@@ -11,35 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>My Sample Page</title>
-    <style type="text/css">
-        .login_header {
-            position: center;
-            top: 50%;
-            left: 50%;
-            margin-top: -150px;
-            margin-left: -150px;
-        }
-
-        .login_div {
-            position: absolute;
-            width: 500px;
-            height: 300px;
-            /* Center form on page horizontally & vertically */
-            top: 50%;
-            left: 50%;
-            margin-top: -150px;
-            margin-left: -150px;
-        }
-
-        .login_form {
-            width: 400px;
-            height: 300px;
-            background: none;
-            border-radius: 10px;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -118,31 +89,103 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">College<span class="caret"></span></a>
                             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                                 <li class="dropdown-submenu">
-                                    <a tabindex="-1" href="#">Graduate</a>
+                                    <a tabindex="-1" href="#">B.Tech</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">+1 Standard</a></li>
-                                        <li><a href="#">+2 Standard</a></li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#">Electronics & Comm Engg</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1st Semester</a></li>
+                                                <li><a href="#">2nd Semester</a></li>
+                                                <li><a href="#">3rd Semester</a></li>
+                                                <li><a href="#">4th Semester</a></li>
+                                                <li><a href="#">5th Semester</a></li>
+                                                <li><a href="#">6th Semester</a></li>
+                                                <li><a href="#">7th Semester</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#">Mechanical Engg</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1st Semester</a></li>
+                                                <li><a href="#">2nd Semester</a></li>
+                                                <li><a href="#">3rd Semester</a></li>
+                                                <li><a href="#">4th Semester</a></li>
+                                                <li><a href="#">5th Semester</a></li>
+                                                <li><a href="#">6th Semester</a></li>
+                                                <li><a href="#">7th Semester</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#">Civil Engg</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1st Semester</a></li>
+                                                <li><a href="#">2nd Semester</a></li>
+                                                <li><a href="#">3rd Semester</a></li>
+                                                <li><a href="#">4th Semester</a></li>
+                                                <li><a href="#">5th Semester</a></li>
+                                                <li><a href="#">6th Semester</a></li>
+                                                <li><a href="#">7th Semester</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#">Electrical Engg</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1st Semester</a></li>
+                                                <li><a href="#">2nd Semester</a></li>
+                                                <li><a href="#">3rd Semester</a></li>
+                                                <li><a href="#">4th Semester</a></li>
+                                                <li><a href="#">5th Semester</a></li>
+                                                <li><a href="#">6th Semester</a></li>
+                                                <li><a href="#">7th Semester</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#">Chemical Engg</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1st Semester</a></li>
+                                                <li><a href="#">2nd Semester</a></li>
+                                                <li><a href="#">3rd Semester</a></li>
+                                                <li><a href="#">4th Semester</a></li>
+                                                <li><a href="#">5th Semester</a></li>
+                                                <li><a href="#">6th Semester</a></li>
+                                                <li><a href="#">7th Semester</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#">Computer Sci Engg</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1st Semester</a></li>
+                                                <li><a href="#">2nd Semester</a></li>
+                                                <li><a href="#">3rd Semester</a></li>
+                                                <li><a href="#">4th Semester</a></li>
+                                                <li><a href="#">5th Semester</a></li>
+                                                <li><a href="#">6th Semester</a></li>
+                                                <li><a href="#">7th Semester</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-
                                 <li class="dropdown-submenu">
-                                    <a tabindex="-1" href="#">Post Graduate</a>
+                                    <a tabindex="-1" href="#">Masters</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">+1 Standard</a></li>
-                                        <li><a href="#">+2 Standard</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a tabindex="-1" href="#">Docterate</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">+1 Standard</a></li>
-                                        <li><a href="#">+2 Standard</a></li>
+                                        <li><a href="#">Electronics & Comm Engg</a></li>
+                                        <li><a href="#">Mechanical Engg</a></li>
+                                        <li><a href="#">Civil Engg</a></li>
+                                        <li><a href="#">Electrical Engg</a></li>
+                                        <li><a href="#">Chemical Engg</a></li>
+                                        <li><a href="#">Computer Sci Engg</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                    <div class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" runat="server" id="withsession">
+                        <li>
+                            <h4 style="color: #00ff90; margin-left: -150px; margin-top: 16px; width: 200px;">Hello, <%: Session["Username"] %>!</h4>
+                        </li>
+                        <asp:Button ID="signoutBtn" CssClass="btn btn-success navbar-btn" runat="server" Text="Sign Out" OnClick="signoutBtn_Clicked" />
+                    </ul>
+                    <div class="nav navbar-nav navbar-right" runat="server" id="withoutsession">
                         <asp:Button ID="singinBtn" CssClass="btn btn-success navbar-btn" runat="server" Text="Sign In" OnClick="btnSignIn_Click" />
                         <asp:Button ID="signupBtn" CssClass="btn btn-success navbar-btn" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" />
                     </div>

@@ -13,5 +13,20 @@ namespace WebApplication1
         {
 
         }
+
+        protected void btnUpload_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("register.aspx");
+        }
+
+        protected void btnSignIn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login.aspx");
+        }
     }
 }

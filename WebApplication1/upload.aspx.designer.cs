@@ -58,49 +58,85 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Literal FailureText;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// ClassList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ClassList;
         
         /// <summary>
-        /// DropDownList2 control.
+        /// StateList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList StateList;
         
         /// <summary>
-        /// DropDownList3 control.
+        /// MediumList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.DropDownList MediumList;
         
         /// <summary>
-        /// Password1 control.
+        /// SchoolList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password1;
+        protected global::System.Web.UI.WebControls.DropDownList SchoolList;
         
         /// <summary>
-        /// Password2 control.
+        /// GraduateList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password2;
+        protected global::System.Web.UI.WebControls.DropDownList GraduateList;
+        
+        /// <summary>
+        /// BranchList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList BranchList;
+        
+        /// <summary>
+        /// SemesterList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList SemesterList;
+        
+        /// <summary>
+        /// BookName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BookName;
+        
+        /// <summary>
+        /// BookPath control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BookPath;
         
         /// <summary>
         /// btnSend control.

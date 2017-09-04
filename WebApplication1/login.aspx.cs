@@ -17,6 +17,10 @@ namespace WebApplication1
         {
 
         }
+        protected void Unnamed_LoggingOut(object sender, EventArgs e)
+        {
+
+        }
         protected void btnSend_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -28,7 +32,9 @@ namespace WebApplication1
             da.Fill(dt);
             if (dt.Rows.Count > 0)
             {
+                Session["Username"] = UserName.Text;
                 Response.Redirect("display.aspx");
+                Session.RemoveAll();
             }
             else
             {
@@ -39,6 +45,11 @@ namespace WebApplication1
         protected void btnSignUp_Click(object sender, EventArgs e)
         {
             Response.Redirect("register.aspx");
+        }
+
+        protected void signoutBtn_Clicked(object sender, EventArgs e)
+        {
+            withoutsession.Visible = false;
         }
 
         protected void btnSignIn_Click(object sender, EventArgs e)

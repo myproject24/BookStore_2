@@ -10,28 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>My Sample Page</title>
-    <style type="text/css">
-        .login_div {
-            position: absolute;
-            width: 500px;
-            height: 300px;
-            /* Center form on page horizontally & vertically */
-            top: 50%;
-            left: 50%;
-            margin-top: -150px;
-            margin-left: -150px;
-        }
-
-        .login_form {
-            width: 400px;
-            height: 300px;
-            background: none;
-            border-radius: 10px;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <title>My Sample Page</title>    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -141,8 +120,8 @@
                 </div>
             </div>
         </div>
-        <div class="login_div">
-            <h3>Register here.</h3>
+        <div class="login_div" style="margin-top:-250px">
+            <h3>Upload here.</h3>
             <div class="login_form form-horizontal">
                 <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
                     <p class="text-danger">
@@ -150,9 +129,18 @@
                     </p>
                 </asp:PlaceHolder>
                 <div class="form-group">
-                    <div class="col-sm-8">
+                    <div class="col-sm-10">
+                        <label>Select Class:</label>
+                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="ClassList" runat="server">
+                            <asp:ListItem>School</asp:ListItem>
+                            <asp:ListItem>College</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
                         <label>Select State:</label>
-                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="DropDownList1" runat="server">
+                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="StateList" runat="server">
                             <asp:ListItem>Andhra Pradesh</asp:ListItem>
                             <asp:ListItem>Karnataka</asp:ListItem>
                             <asp:ListItem>Tamilnadu</asp:ListItem>
@@ -161,18 +149,18 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-sm-8">
+                    <div class="col-sm-10">
                         <label>Select Medium:</label>
-                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="DropDownList2" runat="server">
+                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="MediumList" runat="server">
                             <asp:ListItem>Native</asp:ListItem>
                             <asp:ListItem>English</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-sm-8">
-                        <label>Select State:</label>
-                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="DropDownList3" runat="server">
+                    <div class="col-sm-10">
+                        <label>Select Standard:</label>
+                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="SchoolList" runat="server">
                             <asp:ListItem>Andhra Pradesh</asp:ListItem>
                             <asp:ListItem>Karnataka</asp:ListItem>
                             <asp:ListItem>Tamilnadu</asp:ListItem>
@@ -181,18 +169,51 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-sm-8">
-                        <asp:TextBox runat="server" ID="Password1" TextMode="Password" CssClass="form-control" placeholder="Password" required="required" />
+                    <div class="col-sm-10">
+                        <label>Select College:</label>
+                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="GraduateList" runat="server">
+                            <asp:ListItem>Andhra Pradesh</asp:ListItem>
+                            <asp:ListItem>Karnataka</asp:ListItem>
+                            <asp:ListItem>Tamilnadu</asp:ListItem>
+                            <asp:ListItem>Telangana</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-sm-8">
-                        <asp:TextBox runat="server" ID="Password2" TextMode="Password" CssClass="form-control" placeholder="Confirm Password" required="required" />
+                    <div class="col-sm-10">
+                        <label>Select Branch:</label>
+                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="BranchList" runat="server">
+                            <asp:ListItem>Andhra Pradesh</asp:ListItem>
+                            <asp:ListItem>Karnataka</asp:ListItem>
+                            <asp:ListItem>Tamilnadu</asp:ListItem>
+                            <asp:ListItem>Telangana</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <label>Select Semester:</label>
+                        <asp:DropDownList AutoPostBack="true" Width="150px" ID="SemesterList" runat="server">
+                            <asp:ListItem>Andhra Pradesh</asp:ListItem>
+                            <asp:ListItem>Karnataka</asp:ListItem>
+                            <asp:ListItem>Tamilnadu</asp:ListItem>
+                            <asp:ListItem>Telangana</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <asp:TextBox runat="server" ID="BookName" CssClass="form-control" placeholder="Name of the Book" required="required" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <asp:TextBox runat="server" ID="BookPath" CssClass="form-control" placeholder="Path to the Book" required="required" />
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-6">
-                        <asp:Button ID="btnSend" Text="Sign Up" class="btn btn-primary" runat="server" OnClick="btnSend_Click" />
+                        <asp:Button ID="btnSend" Text="Upload" class="btn btn-primary" runat="server" OnClick="btnUpload_Click" />
                     </div>
                 </div>
             </div>

@@ -11,27 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>My Sample Page</title>
-    <style type="text/css">
-        .login_div {
-            position: absolute;
-            width: 500px;
-            height: 300px;
-            /* Center form on page horizontally & vertically */
-            top: 50%;
-            left: 50%;
-            margin-top: -150px;
-            margin-left: -150px;
-        }
-
-        .login_form {
-            width: 400px;
-            height: 300px;
-            background: none;
-            border-radius: 10px;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
